@@ -17,7 +17,8 @@ namespace Partie_1____Interrogations
             con = new SqlConnection("data source=.; initial catalog=filrouge; Trusted_Connection=true");
         }
 
-        public List<Commande> ListByClient() //int IdClient
+        // Affichage de la liste des clients (pour le combobox)
+        public List<Commande> ListByClient()
         {
             List<Commande> liste = new List<Commande>();
 
@@ -32,6 +33,7 @@ namespace Partie_1____Interrogations
             while (resultat.Read())
             {
                 Commande c = new Commande();
+
                 c.RefClient = Convert.ToInt32(resultat["RefClient"]);
 
                 liste.Add(c);
