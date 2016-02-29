@@ -59,6 +59,7 @@ namespace Partie_2___Requete_Ajout
 
         private void button3_Click(object sender, EventArgs e)
         {
+            dataGridView1.Enabled = true;
             DialogResult dr = MessageBox.Show
                   ("Souhaitez-vous annuler la saisie du nouveau fournisseur ?", "Ajout nouveau fournisseur", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1);
             if (dr == DialogResult.Yes)
@@ -105,7 +106,7 @@ namespace Partie_2___Requete_Ajout
             {
                 textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 textBox3.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                id_client = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             }
         }
 
@@ -123,7 +124,7 @@ namespace Partie_2___Requete_Ajout
             {
                 textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 textBox3.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
-                id_client = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
             }
         }
         
