@@ -17,11 +17,15 @@ namespace Partie_1____Interrogations
             InitializeComponent();
             Width = 340;
             Height = 148;
+
             
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
+
             //Affichage liste des clients dans combobox
             ClientDAO filrouge = new ClientDAO();
 

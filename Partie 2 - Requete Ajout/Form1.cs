@@ -39,6 +39,10 @@ namespace Partie_2___Requete_Ajout
             button7.Visible = true;
 
             dataGridView1.Enabled = true;
+
+            dataGridView1.Columns[0].HeaderText = "ID Fournisseur";
+            dataGridView1.Columns[1].HeaderText = "Nom Fournisseur";
+            dataGridView1.Columns[2].HeaderText = "Adresse Fournisseur";
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -202,7 +206,6 @@ namespace Partie_2___Requete_Ajout
                     dataGridView1.RowHeadersVisible = false;
                     dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                     dataGridView1.DataSource = filrouge.List();
-                    dataGridView1.Columns[0].Visible = false;
                     dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
                     textBox1.Clear();
@@ -243,7 +246,6 @@ namespace Partie_2___Requete_Ajout
                     dataGridView1.RowHeadersVisible = false;
                     dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                     dataGridView1.DataSource = filrouge.List();
-                    dataGridView1.Columns[0].Visible = false;
                     dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
                     textBox1.Clear();
@@ -263,8 +265,8 @@ namespace Partie_2___Requete_Ajout
             {
                 Fournisseur f = new Fournisseur();
 
-                f.NomFournisseur = textBox2.Text;
-                f.AdresseFournisseur = textBox3.Text;
+                //f.NomFournisseur = textBox2.Text;
+                //f.AdresseFournisseur = textBox3.Text;
                 f.IDFournisseur = id_client;
 
 
@@ -283,7 +285,6 @@ namespace Partie_2___Requete_Ajout
                     dataGridView1.RowHeadersVisible = false;
                     dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                     dataGridView1.DataSource = filrouge.List();
-                    dataGridView1.Columns[0].Visible = false;
                     dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
                     textBox1.Clear();
