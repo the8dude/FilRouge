@@ -11,13 +11,18 @@ namespace AdresseMail
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("saisissez une adresse");
+            string saisie = Console.ReadLine();
+            Console.WriteLine(CheckMail(saisie));
+
+            Console.ReadKey();
         }
 
-        public static string CheckMail (string email)
+        public static string CheckMail (string saisie)
         {
             //VARIABLES
             string resultat = "";
-            string saisie;
+            
             string rep1;
             string rep2;
             string rep3;
@@ -28,9 +33,9 @@ namespace AdresseMail
             Regex e1 = new Regex(@"^[a-z0-9._-]{2,}$");
             Regex e2 = new Regex(@"^[a-z]{2,4}$");
            
-            //Saisie utilisateur
-            Console.WriteLine("Entrez votre adresse mail :");
-            saisie = Console.ReadLine();
+            ////Saisie utilisateur
+            //Console.WriteLine("Entrez votre adresse mail :");
+            //saisie = Console.ReadLine();
 
             int pos_arobase = saisie.IndexOf("@");
             int pos_point = saisie.IndexOf(".");
@@ -38,32 +43,32 @@ namespace AdresseMail
             //Gestion du '@' et du '.'
             if (pos_point == -1)
             {
-                Console.WriteLine("Il n'y a pas de '.'");
+                resultat = "Il n'y a pas de '.'";
             }
             else
             {
                 if (pos_arobase == -1)
                 {
-                    Console.WriteLine("Il n'y a pas de '@'");
+                    resultat =  "Il n'y a pas de '@'";
                 }
                 else
                 {
                     //Gestion du nombre de caractères pour chaque partie (minimum 2)
                     if (pos_arobase < 2)
                     {
-                        Console.WriteLine("Il y a moins de 2 caractères avant le '@'");
+                        resultat = "Il y a moins de 2 caractères avant le '@'";
                     }
                     else
                     {
                         if (pos_point - pos_arobase <= 2)
                         {
-                            Console.WriteLine("Il y a moins de 2 caractères entre le '@' et le '.'");
+                            resultat = "Il y a moins de 2 caractères entre le '@' et le '.'";
                         }
                         else
                         {
                             if (saisie.Length - pos_point <= 2)
                             {
-                                Console.WriteLine("Il y a moins de 2 caractères après le '.' ");
+                                resultat = "Il y a moins de 2 caractères après le '.'";
                             }
                             else
                             {
@@ -83,18 +88,18 @@ namespace AdresseMail
 
                                 if (e1.IsMatch(rep1) == false)
                                 {
-                                    Console.WriteLine("La partie avant '@' ne convient pas !");
+                                    resultat = "La partie avant '@' ne convient pas !";
                                 }
                                 else if (e1.IsMatch(rep3) == false)
                                 {
-                                    Console.WriteLine("La partie entre '@' et '.' ne convient pas !");
+                                    resultat = "La partie entre '@' et '.' ne convient pas !";
                                 }
                                 else if (e2.IsMatch(rep4) == false)
                                 {
-                                    Console.WriteLine("La partie après '.' ne convient pas !");
+                                    resultat = "La partie après '.' ne convient pas !";
                                 }
                                 else
-                                    Console.WriteLine("OK");
+                                    resultat = "OK";
                             }
 
                         }
@@ -105,7 +110,7 @@ namespace AdresseMail
 
             return resultat;
 
-            Console.ReadKey();
+           
           }
 
         //fonction STRTOK permettant de définir les différentes parties de l'adesse email (0@1/0.1)
