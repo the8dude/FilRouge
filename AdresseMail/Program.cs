@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace AdresseMail
 {
-    class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
+        }
+
+        public static string CheckMail (string email)
+        {
             //VARIABLES
+            string resultat = "";
             string saisie;
             string rep1;
             string rep2;
@@ -97,14 +102,14 @@ namespace AdresseMail
                 }
 
             }
-                
-    
+
+            return resultat;
 
             Console.ReadKey();
           }
 
         //fonction STRTOK permettant de définir les différentes parties de l'adesse email (0@1/0.1)
-        static string strtok(string str1, char str2, int n)
+        static public string strtok(string str1, char str2, int n)
         {
             string resultat = "";
             int compteur = 0;
