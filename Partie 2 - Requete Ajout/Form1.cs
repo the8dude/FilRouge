@@ -107,6 +107,7 @@ namespace Partie_2___Requete_Ajout
                 textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 textBox3.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
                 textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                id_client = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
 
@@ -125,6 +126,7 @@ namespace Partie_2___Requete_Ajout
                 textBox2.Text = dataGridView1.SelectedRows[0].Cells[1].Value.ToString();
                 textBox3.Text = dataGridView1.SelectedRows[0].Cells[2].Value.ToString();
                 textBox1.Text = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                id_client = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
         
