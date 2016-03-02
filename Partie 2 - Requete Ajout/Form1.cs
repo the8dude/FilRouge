@@ -296,5 +296,10 @@ namespace Partie_2___Requete_Ajout
                 }
             }
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
