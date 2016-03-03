@@ -11,7 +11,7 @@ namespace Partie_2___Requete_Ajout
     {
         SqlConnection con;
 
-        //Ouverture de la connexion au serveur SQL Hotel2
+        //Ouverture de la connexion au serveur SQL Fil Rouge
         public FournisseurDAO()
         {
             con = new SqlConnection("data source=.; initial catalog=filrouge; Trusted_Connection=true");

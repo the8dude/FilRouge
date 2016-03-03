@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdresseMail", "AdresseMail\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMail", "TestMail\TestMail.csproj", "{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CA Fournisseurs", "CA Fournisseurs\CA Fournisseurs.csproj", "{7526D688-F718-4524-A673-AFF63D8B5507}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7526D688-F718-4524-A673-AFF63D8B5507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7526D688-F718-4524-A673-AFF63D8B5507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7526D688-F718-4524-A673-AFF63D8B5507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7526D688-F718-4524-A673-AFF63D8B5507}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
