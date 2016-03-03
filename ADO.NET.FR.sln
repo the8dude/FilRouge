@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Partie 2 - Requete Ajout", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdresseMail", "AdresseMail\AdresseMail.csproj", "{547EF408-0703-4D80-9151-E889CEA2CC07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMail", "TestMail\TestMail.csproj", "{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{547EF408-0703-4D80-9151-E889CEA2CC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{547EF408-0703-4D80-9151-E889CEA2CC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{547EF408-0703-4D80-9151-E889CEA2CC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DB62D6-9CAE-4590-BFA3-6AF8F2D6E275}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
